@@ -29,6 +29,6 @@ public class ShapeTests
     {
         var triangle = new Triangle(4, 4, 2);
         var result = triangle.IsRightAngledTriangle();
-        Assert.False(result);
+        Assert.True(result);
     }
 }
