@@ -1,0 +1,9 @@
+﻿SELECT 
+    P.ProductName,
+    C.CategoryName
+FROM 
+    Products P
+LEFT JOIN 
+    ProductCategoryMap PCM ON P.ProductID = PCM.ProductID
+LEFT JOIN 
+    ProductCategories C ON PCM.CategoryID = C.CategoryID;
